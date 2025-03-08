@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Productivity Extension</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Search</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search GitHub...">
-        <button id="searchBtn">Search</button>
-    </div>
-    <script src="popup.js"></script>
+  <h2>GitHub Search</h2>
+  
+  <input type="text" id="searchInput" placeholder="Search GitHub..." />
+
+  <label>Search Type:</label>
+  <select id="searchType">
+    <option value="repository">Repositories</option>
+    <option value="issue">Issues</option>
+    <option value="pr">Pull Requests</option>
+  </select>
+
+  <label>Language:</label>
+  <select id="languageSelect">
+    <option value="">Any</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="Python">Python</option>
+    <option value="Java">Java</option>
+    <option value="Go">Go</option>
+    <option value="C++">C++</option>
+  </select>
+
+  <label>Min Stars:</label>
+  <input type="number" id="minStars" placeholder="100" />
+
+  <label>Sort By:</label>
+  <select id="sortSelect">
+    <option value="best-match">Best Match</option>
+    <option value="stars-desc">Most Stars</option>
+    <option value="stars-asc">Fewest Stars</option>
+  </select>
+
+  <button id="searchButton">Search</button>
+
+  <h3>Results</h3>
+  <ul id="results"></ul>
+
+  <h3>Bookmarked Repos</h3>
+  <ul id="bookmarks"></ul>
+
+  <script src="popup.js"></script>
 </body>
 </html>
