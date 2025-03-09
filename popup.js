@@ -1,5 +1,5 @@
 
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN = "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";
 const API_URL = "https://api.github.com/graphql";
 
 document.getElementById("searchButton").addEventListener("click", async () => {
