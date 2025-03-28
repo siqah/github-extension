@@ -3,15 +3,50 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0d1117;
   color: #c9d1d9;
-  padding: 20px;
-  margin: 0;
+  padding: 10px;
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+
 }
 
 h2, h3 {
   color: #f0f6fc;
-  border-bottom: 1px solid #30363d;
+  border-bottom: #8b949e 1px solid;
   padding-bottom: 5px;
   font-size: 1.5em;
+  text-align: none;
+}
+#extensionName{
+  color: #58a6ff;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#giteasebutton {
+  color: #58a6ff;;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+
+}
+
+
+#searchType{
+  width: 120px;
+}
+
+#languageSelect{
+  width: 90px;
+}
+#sortSelect{
+  width: 120px;
+}
+#minStars {
+  width: 50px;
 }
 
 input, select, button {
@@ -24,16 +59,9 @@ input, select, button {
   font-size: 14px;
 }
 
-button {
-  background-color: #238636;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.2s ease-in-out;
-}
 
 button:hover {
-  background-color: #2ea043;
+  background-color: #4d8a58;
 }
 
 ul {

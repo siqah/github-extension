@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Productivity Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GitHub Productivity Dashboard</h1>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+    
+    <div class="container">
+        <section id="github-connection">
+            <h2>Connect to GitHub</h2>
+            <button id="connect-github-button">Connect GitHub</button>
+        </section>
+
+        <section id="overview">
+            <h2>Overview</h2>
+            <div class="stats">
+                <p>Open PRs: <span id="open-prs">0</span></p>
+                <p>Assigned Issues: <span id="assigned-issues">0</span></p>
+                <p>Pending Reviews: <span id="pending-reviews">0</span></p>
+            </div>
+        </section>
+        
+        <section id="quick-actions">
+            <h2>Quick Actions</h2>
+            <button id="new-issue">New Issue</button>
+            <button id="new-pr">New PR</button>
+            <button id="open-repo">Open Repository</button>
+        </section>
+        
+        <section id="repo-insights">
+            <h2>Repository Insights</h2>
+            <ul id="repo-stats"></ul>
+        </section>
+        
+        <section id="notifications">
+            <h2>Notifications</h2>
+            <ul id="notifications-list"></ul>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

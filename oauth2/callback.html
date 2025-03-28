@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub OAuth Callback</title>
+</head>
+<body>
+    <script src="s">
+
+const urlParams = new URLSearchParams(window.location.search);
+const code = urlParams.get('code');
+
+if (code) {
+    chrome.runtime.sendMessage({ action: "oauthCallback", code: code });
+} else {
+    console.error("No code received from GitHub.");
+}
+    </script>
+</body>
+</html>
